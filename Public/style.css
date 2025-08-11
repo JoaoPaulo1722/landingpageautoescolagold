@@ -1,0 +1,546 @@
+:root {
+  --gold: #ffd400; /* amarelo do logo */
+  --ink: #151525; /* azul-escuro do logo */
+  --soft: #f7f7fb; /* cinza claro */
+}
+
+/* Reset básico */
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: system-ui, Inter, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--ink);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 15px;
+}
+
+.hdr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gold);
+  color: #111;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.cta:hover {
+  transform: translateY(-1px);
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  background: linear-gradient(120deg, #0c0c15 0%, #1a1a2b 60%);
+  color: #fff;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 28px;
+  align-items: center;
+  padding: 48px 0;
+}
+
+.headline {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 0 0 14px;
+}
+
+.hl {
+  color: var(--gold);
+}
+
+.sub {
+  opacity: 0.9;
+  margin: 0 0 22px;
+  font-size: clamp(14px, 2.1vw, 18px);
+}
+
+.hero-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  display: grid;
+  gap: 10px;
+  color: var(--ink);
+}
+
+.hero-badges {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.badge {
+  background: rgba(255, 212, 0, 0.12);
+  border: 1px dashed rgba(255, 212, 0, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.hero-media .frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-media .frame img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 5%;
+}
+
+/* Seções */
+section {
+  padding: 56px 0;
+}
+
+.sec-title {
+  font-size: 28px;
+  margin: 0 0 18px;
+}
+
+.grid-3 {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.muted {
+  color: #555;
+}
+
+.soft {
+  background: var(--soft);
+}
+
+/* Como funciona */
+.how {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.step {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 16px;
+  position: relative;
+}
+
+.step .num {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  background: var(--gold);
+  font-weight: 800;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+/* Vídeos */
+.gallery-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.media {
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background: #000;
+  aspect-ratio: 9 / 16;
+  display: flex;
+}
+
+.media video,
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Planos */
+.pricing {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.plan {
+  border: 2px solid #eee;
+  border-radius: 16px;
+  padding: 18px;
+  background: #fff;
+}
+
+.plan.best {
+  border-color: var(--gold);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.plan h3 {
+  margin: 0 0 10px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 8px 0;
+}
+
+/* Contato */
+.contact {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+input,
+select,
+textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font: inherit;
+}
+
+button.primary {
+  background: var(--gold);
+  border: 0;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+.map {
+  width: 100%;
+  height: 320px;
+  border: 0;
+  border-radius: 14px;
+}
+
+.info {
+  margin-top: 10px;
+}
+
+/* Reviews */
+
+/* Seção compacta de reviews */
+.reviews-section.compact {
+  background: var(--soft); /* combina com seu tema */
+  text-align: center;
+  padding: 32px 20px;
+}
+
+.reviews-section.compact h2 {
+  margin: 0 0 14px;
+}
+
+/* Barra centralizada com nota + botão */
+.reviews-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 18px; /* espaço entre nota e botão */
+  flex-wrap: wrap; /* quebra no mobile */
+}
+
+/* Bloco da nota */
+.rating-summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #444;
+}
+
+.stars {
+  color: #f5b300;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.rating {
+  font-size: 18px;
+}
+.count {
+  font-size: 14px;
+  color: #6b7280;
+  text-decoration: none;
+}
+.count:hover {
+  text-decoration: underline;
+}
+
+/* Botão reaproveita sua .cta; só ajusta para não esticar */
+.reviews-btn {
+  white-space: nowrap; /* não quebra o texto do botão */
+}
+
+/* Rodapé */
+.footer {
+  background: #0f0f19;
+  color: #cfd3ff;
+}
+
+.foot {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 20px;
+}
+
+/* ---------- RESPONSIVO AJUSTADO ---------- */
+
+/* Tablets e celulares */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  section {
+    padding: 32px 0;
+  }
+
+  /* Header */
+  .hdr {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .logo img {
+    height: auto;
+    max-height: 42px;
+    max-width: 100%;
+  }
+
+  .cta {
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  /* Hero */
+  .wrap {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .hero-media {
+    order: -1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-media .frame img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .headline {
+    font-size: 22px;
+    line-height: 1.3;
+    word-break: break-word;
+  }
+
+  .sub {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .hero-card {
+    padding: 14px;
+    gap: 8px;
+  }
+
+  .hero-badges {
+    grid-template-columns: 1fr;
+  }
+
+  .badge {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* Grids */
+  .grid-3,
+  .how,
+  .pricing,
+  .contact,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Cards */
+  .card,
+  .plan,
+  .step {
+    padding: 14px;
+  }
+
+  /* Números do passo */
+  .step .num {
+    top: -10px;
+    left: -10px;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  /* Vídeos */
+  .media {
+    aspect-ratio: auto;
+    width: 100%;
+  }
+
+  .media video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Contato */
+  form input,
+  form select,
+  form textarea {
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  button.primary {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  /* Mapa */
+  .map {
+    height: 250px;
+    width: 100%;
+  }
+
+  /* Rodapé */
+  .foot {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .foot .cta {
+    font-size: 14px;
+    padding: 8px 14px;
+    width: 100%;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .headline {
+    font-size: 20px;
+  }
+
+  .sec-title {
+    font-size: 20px;
+  }
+
+  .badge {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .hero-media .frame img {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .reviews-bar {
+    gap: 12px;
+  }
+  .stars {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .rating {
+    font-size: 16px;
+  }
+}
