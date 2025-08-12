@@ -8,7 +8,8 @@
       name="description"
       content="Auto Escola Gold – Matrícula, aulas teóricas e práticas, aprovação rápida. Fale no WhatsApp e comece sua CNH hoje."
     />
-    <link rel="preload" as="image" href="/docs/img/Auto Escola Gold.png" />
+    <!-- Preload da imagem do logo usada no hero -->
+    <link rel="preload" as="image" href="img/goldimg.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,16 +17,14 @@
     <header class="header">
       <div class="container hdr">
         <div class="logo">
-          <!-- Coloque seu arquivo do logo em /assets e ajuste o nome abaixo -->
           <img src="img/goldimg.png" alt="Auto Escola Gold" />
         </div>
-        <!-- TODO: substituir DDD e número -->
+
+        <!-- Um único CTA: rola para o formulário -->
         <a
           class="cta"
-          id="ctaTop"
-          href="https://wa.me/5511971529053?text=Olá%20Auto%20Escola%20Gold!%20Quero%20começar%20minha%20CNH."
-          target="_blank"
-          rel="noopener"
+          href="#contato"
+          aria-label="Ir para o formulário de WhatsApp"
         >
           Falar no WhatsApp
         </a>
@@ -55,7 +54,6 @@
           </div>
         </div>
         <div class="hero-media">
-          <!-- Troque pela foto real da escola -->
           <div class="frame">
             <img
               src="img/goldimg.png"
@@ -119,7 +117,7 @@
       </div>
     </section>
 
-    <!-- Instagram (troque os links) -->
+    <!-- Galeria / vídeos -->
     <section class="soft">
       <div class="container">
         <h2 class="sec-title">Veja a Gold em ação</h2>
@@ -132,7 +130,6 @@
               loop
               muted
               playsinline
-              muted
             ></video>
           </figure>
 
@@ -143,7 +140,6 @@
               loop
               muted
               playsinline
-              muted
             ></video>
           </figure>
 
@@ -154,7 +150,6 @@
               loop
               muted
               playsinline
-              muted
             ></video>
           </figure>
         </div>
@@ -193,11 +188,13 @@
       <div class="container contact">
         <div>
           <h2 class="sec-title">Fale com a Gold</h2>
-          <form onsubmit="return sendWhatsApp(event)">
+
+          <!-- Um único fluxo: formulário -> abre WhatsApp com texto pronto -->
+          <form id="form-contato">
             <input id="nome" placeholder="Seu nome" required />
-            <select id="categoria">
-              <option value="Categoria B">Categoria B (carro)</option>
-              <option value="Categoria A">Categoria A (moto)</option>
+            <select id="categoria" aria-label="Escolha de categoria">
+              <option value="B">Categoria B (carro)</option>
+              <option value="A">Categoria A (moto)</option>
               <option value="A + B">A + B (combo)</option>
             </select>
             <textarea
@@ -208,8 +205,8 @@
             <button class="primary" type="submit">Enviar no WhatsApp</button>
           </form>
         </div>
+
         <div>
-          <!-- Troque pelo mapa real -->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1540.971041494914!2d-47.29107536527707!3d-23.27699862087411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf45f1e10961fd%3A0xe05c8f31139cedf1!2sAuto%20Escola%20Gold%20Itu!5e0!3m2!1spt-BR!2sus!4v1754608535492!5m2!1spt-BR!2sus"
             width="600"
@@ -218,12 +215,12 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa da Auto Escola Gold em Itu"
           ></iframe>
           <p class="muted info">
             Endereço:
-            <strong
-              >R. Maestro Tristão Mariano da Costa, 119 - Vila Nova, Itu -
-              SP</strong
+            <strong>
+              R. Maestro Tristão Mariano da Costa, 119 - Vila Nova, Itu - SP </strong
             ><br />
             Horário: <strong>[Seg a Sex, 8h–18h] - [Sab - 9h-13h]</strong>
           </p>
@@ -231,21 +228,22 @@
       </div>
     </section>
 
+    <!-- Reviews compactas com link para o Google -->
     <section class="reviews-section">
       <h2>O que nossos alunos dizem</h2>
 
-      <div class="rating-summary">
-        <span class="stars">★★★★★</span>
+      <div class="rating-summary" aria-label="Média de avaliações">
+        <span class="stars" aria-hidden="true">★★★★★</span>
         <strong class="rating">4,9</strong>
         <span class="count">(283 avaliações)</span>
       </div>
 
       <a
         class="cta reviews-btn"
-        href="https://www.google.com/maps/place/Auto+Escola+Gold+Itu/@-23.2782666,-47.2935975,17z/data=!4m8!3m7!1s0x94cf45f1e10961fd:0xe05c8f31139cedf1!8m2!3d-23.2782666!4d-47.2910226!9m1!1b1!16s%2Fg%2F11t7_m5zvx?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
+        href="https://www.google.com/maps/place/Auto+Escola+Gold+Itu/@-23.2782666,-47.2935975,17z/data=!4m8!3m7!1s0x94cf45f1e10961fd:0xe05c8f31139cedf1!8m2!3d-23.2782666!4d-47.2910226!9m1!1b1!16s%2Fg%2F11t7_m5zvx?entry=ttu"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Ver avaliações no Google"
+        aria-label="Ver todas as avaliações no Google"
       >
         Ver avaliações no Google
       </a>
@@ -253,17 +251,13 @@
 
     <footer class="footer">
       <div class="container foot">
-        <small
-          >© <span id="year"></span> Auto Escola Gold. Todos os direitos
-          reservados.</small
-        >
-        <a
-          class="cta"
-          href="https://wa.me/5511971529053?text=Olá%20Auto%20Escola%20Gold!%20Quero%20começar%20minha%20CNH."
-          target="_blank"
-          rel="noopener"
-          >WhatsApp</a
-        >
+        <small>
+          © <span id="year"></span> Auto Escola Gold. Todos os direitos
+          reservados.
+        </small>
+
+        <!-- Rodapé também rola para o formulário -->
+        <a class="cta" href="#contato">WhatsApp</a>
       </div>
     </footer>
 
