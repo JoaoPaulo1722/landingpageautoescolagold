@@ -6,24 +6,32 @@ document.getElementById("year").textContent = new Date().getFullYear();
 // Número oficial (formato E.164: 55 + DDD + número)
 const WHATSAPP_NUMBER = "5511971529053"; // número da Gold
 
-// Referências de campos
+// Referências
 const form = document.getElementById("form-contato");
 const nomeEl = document.getElementById("nome");
 const catEl = document.getElementById("categoria");
 const msgEl = document.getElementById("msg");
 const cursoEl = document.getElementById("curso");
 const semCursoEl = document.getElementById("semCurso");
+const semCategoriaEl = document.getElementById("semCategoria");
 
-// Liga/desliga o select de curso quando marca "não tenho interesse"
+// Habilita/desabilita campos conforme checkboxes
+function toggleCategoria() {
+  if (!catEl || !semCategoriaEl) return;
+  catEl.disabled = semCategoriaEl.checked;
+  if (semCategoriaEl.checked) catEl.value = "";
+}
 function toggleCurso() {
   if (!cursoEl || !semCursoEl) return;
   cursoEl.disabled = semCursoEl.checked;
   if (semCursoEl.checked) cursoEl.value = "";
 }
-if (cursoEl && semCursoEl) {
-  semCursoEl.addEventListener("change", toggleCurso);
-  toggleCurso(); // garante estado inicial correto
-}
+
+// Liga os toggles uma vez
+semCategoriaEl?.addEventListener("change", toggleCategoria);
+semCursoEl?.addEventListener("change", toggleCurso);
+toggleCategoria();
+toggleCurso();
 
 // =========================
 // Envia a mensagem formatada no WhatsApp
@@ -32,25 +40,32 @@ function sendWhatsApp(e) {
   e.preventDefault();
 
   const nome = (nomeEl?.value || "").trim();
-  const categoria = (catEl?.value || "").trim();
+  const categoria = semCategoriaEl?.checked ? "" : (catEl?.value || "").trim();
+  const curso = semCursoEl?.checked ? "" : (cursoEl?.value || "").trim();
   const msg = (msgEl?.value || "").trim();
 
-  // curso só entra se existir select e NÃO estiver marcado "sem curso"
-  const semCursoMarcado = !!semCursoEl?.checked;
-  const curso = !semCursoMarcado ? (cursoEl?.value || "").trim() : "";
-
-  // (Opcional) validação simples
+  // Validações básicas
   if (!nome) {
     nomeEl?.focus();
     return;
   }
 
-  let texto = `Olá, meu nome é ${nome}, tudo bem?\n`;
-  texto += `Tenho interesse em iniciar minha CNH – Categoria ${categoria}.\n`;
+  // Requisito do cliente: a pessoa pode escolher só curso OU só CNH OU ambos,
+  // mas não pode enviar sem nenhum dos dois.
+  if (!categoria && !curso) {
+    // Mostre a mensagem que preferir (alert simples para ser direto)
+    alert("Selecione uma categoria de CNH ou um curso profissionalizante.");
+    return;
+  }
 
-  // Só menciona curso se um curso foi escolhido e NÃO marcou "sem curso"
+  // Monta o texto
+  let texto = `Olá, meu nome é ${nome}, tudo bem?\n`;
+
+  if (categoria) {
+    texto += `Tenho interesse em iniciar minha CNH – Categoria ${categoria}.\n`;
+  }
   if (curso) {
-    texto += `\nTenho interesse também no curso profissional: ${curso}.\n`;
+    texto += `\nTenho interesse no curso profissional: ${curso}.\n`;
   }
 
   if (msg) {
@@ -68,5 +83,4 @@ function sendWhatsApp(e) {
   return false;
 }
 
-// Conecta o formulário
-if (form) form.addEventListener("submit", sendWhatsApp);
+form?.addEventListener("submit", sendWhatsApp);

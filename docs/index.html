@@ -255,9 +255,15 @@
               <option value="A + B">
                 Primeira habilitação A/B (carro e moto)
               </option>
-              <option value="Add B">Adição de categoria B (carro)</option>
-              <option value="Add A">Adição de categoria A (moto)</option>
-              <option value="Add D">Adição de categoria D</option>
+              <option value="Adição de categoria B (carro)">
+                Adição de categoria B (carro)
+              </option>
+              <option value="Adição de categoria A (moto)">
+                Adição de categoria A (moto)
+              </option>
+              <option value="Adição de categoria D">
+                Adição de categoria D
+              </option>
               <option value="Reabilitação categorias A/B">
                 Reabilitação categorias A/B
               </option>
@@ -265,6 +271,12 @@
                 Reabilitação de categoria D
               </option>
             </select>
+
+            <!-- NOVO: não quero iniciar CNH (já possuo) -->
+            <label class="line-option">
+              <input type="checkbox" id="semCategoria" />
+              Já possuo CNH — não preciso selecionar categoria
+            </label>
 
             <!-- Curso profissionalizante (opcional) -->
             <label for="curso">Curso profissionalizante (opcional)</label>
@@ -340,15 +352,6 @@
               <option value="Prova Renovação">Prova de Renovação</option>
               <option value="Prova Preventivo Reciclagem">
                 Prova de Preventivo de Reciclagem
-              </option>
-              <option value="Reciclagem (somente curso)">
-                Reciclagem (somente curso)
-              </option>
-              <option value="Renovação (somente curso)">
-                Renovação (somente curso)
-              </option>
-              <option value="Preventivo Reciclagem (somente curso)">
-                Preventivo Reciclagem (somente curso)
               </option>
               <option value="Processo Reciclagem Infratores">
                 Processo Reciclagem para Condutores Infratores (Curso e Prova)

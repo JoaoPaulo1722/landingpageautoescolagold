@@ -363,6 +363,16 @@ button.primary {
   border: 0;
 }
 
+/* Linha com checkbox e texto */
+.line-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 12px;
+  font-size: 0.95rem;
+  color: #1f2233;
+}
+
 /* Linha do checkbox “Não tenho interesse …” */
 .no-course {
   display: inline-flex;
@@ -373,7 +383,8 @@ button.primary {
   color: #1f2233;
 }
 
-/* Quando o select estiver desabilitado por causa do checkbox */
+/* Quando desabilitar selects */
+#categoria:disabled,
 #curso:disabled {
   opacity: 0.6;
   cursor: not-allowed;
