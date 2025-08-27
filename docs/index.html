@@ -250,10 +250,134 @@
           <form id="form-contato">
             <input id="nome" placeholder="Seu nome" required />
             <select id="categoria" aria-label="Escolha de categoria">
-              <option value="B">Categoria B (carro)</option>
-              <option value="A">Categoria A (moto)</option>
-              <option value="A + B">A + B (combo)</option>
+              <option value="B">Primeira habilitação B (carro)</option>
+              <option value="A">Primeira habilitação A (moto)</option>
+              <option value="A + B">
+                Primeira habilitação A/B (carro e moto)
+              </option>
+              <option value="Add B">Adição de categoria B (carro)</option>
+              <option value="Add A">Adição de categoria A (moto)</option>
+              <option value="Add D">Adição de categoria D</option>
+              <option value="Reabilitação categorias A/B">
+                Reabilitação categorias A/B
+              </option>
+              <option value="Reabilitação de categoria D">
+                Reabilitação de categoria D
+              </option>
             </select>
+
+            <!-- Curso profissionalizante (opcional) -->
+            <label for="curso">Curso profissionalizante (opcional)</label>
+            <select id="curso">
+              <option value="">— Selecionar curso (opcional) —</option>
+
+              <!-- Direção Defensiva -->
+              <option value="Direção Defensiva">Direção Defensiva</option>
+
+              <!-- Cursos principais -->
+              <option value="Transporte Coletivo de Passageiros">
+                Curso Para Condutores de Veículo de Transporte Coletivo de
+                Passageiros
+              </option>
+              <option value="Transporte Escolar">
+                Curso Para Condutores de Veículo de Transporte Escolar
+              </option>
+              <option value="Produtos Perigosos (MOPP)">
+                Curso Para Condutores de Veículos de Transporte de Produtos
+                Perigosos
+              </option>
+              <option value="Veículo de Emergência">
+                Curso Para Condutores de Veículos de Emergência
+              </option>
+              <option value="Carga Indivisível">
+                Curso Para Condutores de Veículos de Transporte de Carga
+                Indivisível
+              </option>
+
+              <!-- Atualizações -->
+              <option value="Atualização Transporte Coletivo">
+                Atualização para Condutores de Transporte Coletivo
+              </option>
+              <option value="Atualização Transporte Escolar">
+                Atualização para Condutores de Veículos de Transporte Escolar
+              </option>
+              <option value="Atualização Produtos Perigosos">
+                Atualização para Condutores de Veículos de Produtos Perigosos
+              </option>
+              <option value="Atualização Veículo de Emergência">
+                Atualização para Condutores de Veículos de Emergência
+              </option>
+              <option value="Atualização Carga Indivisível">
+                Atualização para Condutores de Veículos de Carga Indivisível
+              </option>
+
+              <!-- Outros cursos -->
+              <option value="Frota Leve">
+                Frota Leve: Comportamento e Condução Preventiva
+              </option>
+              <option value="Frota Pesada">
+                Frota Pesada: Direção Econômica e Tecnologia
+              </option>
+              <option value="Moto Carga Ponto a Ponto">
+                Moto: Transporte de Carga ponto a ponto
+              </option>
+              <option value="Bikers Delivery">
+                Bikers: Bike Courier e Delivery
+              </option>
+
+              <!-- Diversos -->
+              <option value="Primeiros Socorros">Primeiros Socorros</option>
+              <option value="Normas de Circulação">
+                Normas de Circulação e Conduta
+              </option>
+              <option value="Empreendedorismo">Empreendedorismo</option>
+              <option value="Prova Primeira Habilitação">
+                Prova Primeira Habilitação
+              </option>
+
+              <!-- Reciclagem e Renovação -->
+              <option value="Prova Reciclagem">Prova de Reciclagem</option>
+              <option value="Prova Renovação">Prova de Renovação</option>
+              <option value="Prova Preventivo Reciclagem">
+                Prova de Preventivo de Reciclagem
+              </option>
+              <option value="Reciclagem (somente curso)">
+                Reciclagem (somente curso)
+              </option>
+              <option value="Renovação (somente curso)">
+                Renovação (somente curso)
+              </option>
+              <option value="Preventivo Reciclagem (somente curso)">
+                Preventivo Reciclagem (somente curso)
+              </option>
+              <option value="Processo Reciclagem Infratores">
+                Processo Reciclagem para Condutores Infratores (Curso e Prova)
+              </option>
+              <option value="Processo Renovação CNH">
+                Processo Renovação da Atualização da CNH (Curso e Prova)
+              </option>
+              <option value="Processo Preventivo Reciclagem">
+                Processo de Preventivo de Reciclagem (Curso e Prova)
+              </option>
+              <option value="Prova Reabilitação">Prova de Reabilitação</option>
+
+              <!-- Normas -->
+              <option value="NR 35 Trabalho em Altura">
+                Norma Regulamentadora 35 – Trabalho em Altura
+              </option>
+
+              <!-- Capacitação -->
+              <option value="Curso de Capacitação para Monitores">
+                Curso de Capacitação para Monitores de Transporte Escolar
+              </option>
+            </select>
+
+            <!-- Checkbox: não tenho interesse -->
+            <label class="no-course">
+              <input type="checkbox" id="semCurso" />
+              Não tenho interesse em curso profissional agora
+            </label>
+
             <textarea
               id="msg"
               rows="3"
