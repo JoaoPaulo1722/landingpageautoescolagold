@@ -264,6 +264,10 @@ section {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.gallery-grid media {
+  position: relative;
+}
+
 .media {
   margin: 0;
   border-radius: 12px;
@@ -279,6 +283,29 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Botão de mute/unmute */
+.mute-btn {
+  position: absolute;
+  border: none;
+  border-radius: 10%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.05s;
+}
+
+.mute-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.mute-btn:active {
+  transform: scale(0.96);
 }
 
 /* Planos */

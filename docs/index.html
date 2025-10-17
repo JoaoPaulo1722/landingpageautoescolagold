@@ -12,6 +12,7 @@
     <link rel="preload" as="image" href="img/goldimg.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <!-- Header -->
     <header class="header">
@@ -182,12 +183,22 @@
         <div class="gallery-grid">
           <figure class="media">
             <video
-              src="Videos/Video1.mp4"
+              id="goldVideo4"
+              src="Videos/Video4.mp4"
               autoplay
               loop
               muted
               playsinline
             ></video>
+            <button
+              class="mute-btn"
+              data-target="goldVideo4"
+              aria-pressed="true"
+              aria-label="Ativar som"
+              title="Ativar som"
+            >
+              🔇
+            </button>
           </figure>
 
           <figure class="media">
@@ -419,7 +430,7 @@
       <div class="rating-summary" aria-label="Média de avaliações">
         <span class="stars" aria-hidden="true">★★★★★</span>
         <strong class="rating">4,9</strong>
-        <span class="count">(283 avaliações)</span>
+        <span class="count">(299 avaliações)</span>
       </div>
 
       <a

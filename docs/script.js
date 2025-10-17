@@ -83,4 +83,29 @@ function sendWhatsApp(e) {
   return false;
 }
 
+(function () {
+  const btns = document.getElementsByClassName("mute-btn");
+  Array.from(btns).forEach((btn) => {
+    const vid = document.getElementById(btn.dataset.target);
+    if (!vid) return;
+
+    // Estado inicial
+    btn.textContent = vid.muted ? "🔇" : "🔊";
+    btn.setAttribute("aria-pressed", vid.muted ? "true" : "false");
+
+    btn.addEventListener("click", () => {
+      vid.muted = !vid.muted;
+      if (!vid.muted) vid.play().catch(() => {}); // Reativa som no click
+
+      btn.textContent = vid.muted ? "🔇" : "🔊";
+      btn.setAttribute("aria-pressed", vid.muted ? "true" : "false");
+      btn.setAttribute(
+        "aria-label",
+        vid.muted ? "Ativar som" : "Desativar som"
+      );
+      btn.title = vid.muted ? "Ativar som" : "Desativar som";
+    });
+  });
+})();
+
 form?.addEventListener("submit", sendWhatsApp);
