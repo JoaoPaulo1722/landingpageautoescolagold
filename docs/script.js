@@ -108,4 +108,18 @@ function sendWhatsApp(e) {
   });
 })();
 
+// Botão Gold Friday -> preenche mensagem automaticamente
+document.querySelector(".gold-friday-btn")?.addEventListener("click", () => {
+  const msgField = document.getElementById("msg");
+
+  if (msgField) {
+    msgField.value = "Gostaria de saber mais sobre a Gold Friday.";
+  }
+
+  // rola suave para o formulário (se já não fizer isso via href)
+  document.querySelector("#contato")?.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
 form?.addEventListener("submit", sendWhatsApp);
