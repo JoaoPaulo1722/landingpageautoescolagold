@@ -8,20 +8,19 @@
       name="description"
       content="Auto Escola Gold – Matrícula, aulas teóricas e práticas, aprovação rápida. Fale no WhatsApp e comece sua CNH hoje."
     />
-    <!-- Preload da imagem do logo usada no hero -->
     <link rel="preload" as="image" href="img/goldimg.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header header--natal">
       <div class="container hdr">
-        <div class="logo">
+        <div class="logo logo--natal">
           <img src="img/LogoNew.JPG" alt="Auto Escola Gold" />
+          <img src="img/gorro.png" class="logo-hat" alt="" aria-hidden="true" />
         </div>
 
-        <!-- Um único CTA: rola para o formulário -->
         <a
           class="cta"
           href="#contato"
@@ -32,18 +31,27 @@
       </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
+    <!-- Hero com tema de Natal -->
+    <section class="hero hero--natal">
+      <!-- Camada de neve (apenas efeito visual) -->
+      <div class="snow snow--hero" aria-hidden="true"></div>
+
       <div class="container wrap">
         <div>
+          <span class="hero-ribbon">
+            🎄 Especial de Natal: condições especiais para sua CNH
+          </span>
+
           <h1 class="headline">
             Comece sua CNH com quem mais aprova em
             <span class="hl">Itu SP</span>
           </h1>
+
           <p class="sub">
             Aulas práticas e teóricas com instrutores experientes, agendamento
             flexível e acompanhamento até a aprovação.
           </p>
+
           <div class="hero-card">
             <div class="hero-badges">
               <div class="badge">Aprovação rápida</div>
@@ -51,11 +59,13 @@
               <div class="badge">Atendimento via WhatsApp</div>
               <div class="badge">Veículos Novos</div>
             </div>
+
             <a class="cta" href="#contato">Quero minha CNH</a>
           </div>
         </div>
+
         <div class="hero-media">
-          <div class="frame">
+          <div class="frame logo--natal">
             <img
               src="img/LogoNew.JPG"
               alt="Auto Escola Gold – aulas práticas"
@@ -87,8 +97,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Nossa Historia -->
 
     <!-- Nossa História -->
     <section id="historia" class="about-section">
@@ -139,7 +147,6 @@
         </div>
 
         <div class="about-media">
-          <!-- Troque a imagem abaixo por uma foto dos proprietários ou da unidade -->
           <img src="img/LogoNew.JPG" alt="Autoescola Gold" loading="lazy" />
         </div>
       </div>
@@ -190,6 +197,7 @@
               playsinline
             ></video>
           </figure>
+
           <figure class="media">
             <video
               id="goldVideo4"
@@ -223,42 +231,15 @@
       </div>
     </section>
 
-    <!-- Planos -->
-    <!-- <section>
-      <div class="container">
-        <h2 class="sec-title">Planos populares</h2>
-        <div class="pricing">
-          <div class="plan">
-            <h3>Categoria A</h3>
-            <p class="price">R$ —</p>
-            <p class="muted">Moto – aulas práticas + teoria</p>
-            <a class="cta" href="#contato">Quero este</a>
-          </div>
-          <div class="plan best">
-            <h3>Categoria B</h3>
-            <p class="price">R$ —</p>
-            <p class="muted">Carro – plano mais escolhido</p>
-            <a class="cta" href="#contato">Quero este</a>
-          </div>
-          <div class="plan">
-            <h3>A + B</h3>
-            <p class="price">R$ —</p>
-            <p class="muted">Combo econômico</p>
-            <a class="cta" href="#contato">Quero este</a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <!-- Contato -->
     <section id="contato" class="soft">
       <div class="container contact">
         <div>
           <h2 class="sec-title">Fale com a Gold</h2>
 
-          <!-- Um único fluxo: formulário -> abre WhatsApp com texto pronto -->
           <form id="form-contato">
             <input id="nome" placeholder="Seu nome" required />
+
             <select id="categoria" aria-label="Escolha de categoria">
               <option value="B">Primeira habilitação B (carro)</option>
               <option value="A">Primeira habilitação A (moto)</option>
@@ -282,21 +263,15 @@
               </option>
             </select>
 
-            <!-- NOVO: não quero iniciar CNH (já possuo) -->
             <label class="line-option">
               <input type="checkbox" id="semCategoria" />
               Já possuo CNH — não preciso selecionar categoria
             </label>
 
-            <!-- Curso profissionalizante (opcional) -->
             <label for="curso">Curso profissionalizante (opcional)</label>
             <select id="curso">
               <option value="">— Selecionar curso (opcional) —</option>
-
-              <!-- Direção Defensiva -->
               <option value="Direção Defensiva">Direção Defensiva</option>
-
-              <!-- Cursos principais -->
               <option value="Transporte Coletivo de Passageiros">
                 Curso Para Condutores de Veículo de Transporte Coletivo de
                 Passageiros
@@ -315,8 +290,6 @@
                 Curso Para Condutores de Veículos de Transporte de Carga
                 Indivisível
               </option>
-
-              <!-- Atualizações -->
               <option value="Atualização Transporte Coletivo">
                 Atualização para Condutores de Transporte Coletivo
               </option>
@@ -332,8 +305,6 @@
               <option value="Atualização Carga Indivisível">
                 Atualização para Condutores de Veículos de Carga Indivisível
               </option>
-
-              <!-- Outros cursos -->
               <option value="Frota Leve">
                 Frota Leve: Comportamento e Condução Preventiva
               </option>
@@ -346,8 +317,6 @@
               <option value="Bikers Delivery">
                 Bikers: Bike Courier e Delivery
               </option>
-
-              <!-- Diversos -->
               <option value="Primeiros Socorros">Primeiros Socorros</option>
               <option value="Normas de Circulação">
                 Normas de Circulação e Conduta
@@ -356,12 +325,10 @@
               <option value="Prova Primeira Habilitação">
                 Prova Primeira Habilitação
               </option>
-
-              <!-- Reciclagem e Renovação -->
               <option value="Prova Reciclagem">Prova de Reciclagem</option>
               <option value="Prova Renovação">Prova de Renovação</option>
               <option value="Prova Preventivo Reciclagem">
-                Prova de Preventivo de Reciclagem
+                Prova de Preventivo de Reciclagем
               </option>
               <option value="Processo Reciclagem Infratores">
                 Processo Reciclagem para Condutores Infratores (Curso e Prova)
@@ -373,19 +340,14 @@
                 Processo de Preventivo de Reciclagem (Curso e Prova)
               </option>
               <option value="Prova Reabilitação">Prova de Reabilitação</option>
-
-              <!-- Normas -->
               <option value="NR 35 Trabalho em Altura">
                 Norma Regulamentadora 35 – Trabalho em Altura
               </option>
-
-              <!-- Capacitação -->
               <option value="Curso de Capacitação para Monitores">
                 Curso de Capacitação para Monitores de Transporte Escolar
               </option>
             </select>
 
-            <!-- Checkbox: não tenho interesse -->
             <label class="no-course">
               <input type="checkbox" id="semCurso" />
               Não tenho interesse em curso profissional agora
@@ -396,6 +358,7 @@
               rows="3"
               placeholder="Mensagem (opcional)"
             ></textarea>
+
             <button class="primary" type="submit">Enviar no WhatsApp</button>
           </form>
         </div>
@@ -411,11 +374,13 @@
             referrerpolicy="no-referrer-when-downgrade"
             title="Mapa da Auto Escola Gold em Itu"
           ></iframe>
+
           <p class="muted info">
             Endereço:
             <strong>
-              R. Maestro Tristão Mariano da Costa, 119 - Vila Nova, Itu - SP </strong
-            ><br />
+              R. Maestro Tristão Mariano da Costa, 119 - Vila Nova, Itu - SP
+            </strong>
+            <br />
             Horário: <strong>[Seg a Sex, 8h–18h] - [Sab - 9h-13h]</strong>
           </p>
         </div>
@@ -429,7 +394,7 @@
       <div class="rating-summary" aria-label="Média de avaliações">
         <span class="stars" aria-hidden="true">★★★★★</span>
         <strong class="rating">4,9</strong>
-        <span class="count">(309 avaliações)</span>
+        <span class="count">(310 avaliações)</span>
       </div>
 
       <a
@@ -448,12 +413,11 @@
         <small>
           © <span id="year"></span> Auto Escola Gold. Todos os direitos
           reservados. | Site desenvolvido por
-          <a href="https://www.linkedin.com/in/joão-paulo-peres-167999218"
-            >João Paulo Peres</a
-          >
+          <a href="https://www.linkedin.com/in/joão-paulo-peres-167999218">
+            João Paulo Peres
+          </a>
         </small>
 
-        <!-- Rodapé também rola para o formulário -->
         <a class="cta" href="#contato">WhatsApp</a>
       </div>
     </footer>
