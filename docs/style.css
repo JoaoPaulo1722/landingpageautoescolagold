@@ -786,6 +786,57 @@ button.primary {
     font-size: 0.8rem;
     padding: 0.3rem 0.75rem;
   }
+
+  .about-section {
+    padding: 40px 0; /* um pouco menos de altura */
+  }
+
+  .about {
+    grid-template-columns: 1fr; /* vira 1 coluna */
+    gap: 24px;
+  }
+
+  .about-col {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .about-media {
+    order: -1; /* imagem sobe */
+    text-align: center;
+  }
+
+  .about-media img {
+    max-width: 260px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .about p {
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .about-stats {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .about-stats li {
+    flex: 1 1 calc(50% - 8px); /* 2 por linha */
+    text-align: center;
+    justify-content: center;
+  }
+
+  .about-cta .cta {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* Celulares pequenos */
