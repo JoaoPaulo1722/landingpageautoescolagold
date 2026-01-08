@@ -8,7 +8,6 @@
       name="description"
       content="Auto Escola Gold – Matrícula, aulas teóricas e práticas, aprovação rápida. Fale no WhatsApp e comece sua CNH hoje."
     />
-    <link rel="preload" as="image" href="img/goldimg.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -31,18 +30,15 @@
       </div>
     </header>
 
-    <!-- Hero com tema de Natal -->
     <section class="hero hero--geral">
-      <!-- Camada de neve (apenas efeito visual) -->
-      <div class="snow snow--hero" aria-hidden="true"></div>
-
       <div class="container wrap">
         <div>
           <span class="hero-ribbon"> Comece 2026 com sua CNH</span>
 
           <h1 class="headline">
-            Comece sua CNH com quem mais aprova em
-            <span class="hl">Itu SP</span>
+            <span class="line">Escolha a experiência que mais aprova -</span>
+            <span class="line">e dirija seu futuro, venha para Gold de</span>
+            <span class="line"><span class="hl">Itu SP</span></span>
           </h1>
 
           <p class="sub">
@@ -64,9 +60,9 @@
         </div>
 
         <div class="hero-media">
-          <div class="frame logo--natal">
+          <div class="frame">
             <img
-              src="img/LogoNew.JPG"
+              src="img/BannerGold2026.jpeg"
               alt="Auto Escola Gold – aulas práticas"
             />
           </div>
@@ -189,7 +185,7 @@
         <div class="gallery-grid">
           <figure class="media">
             <video
-              src="Videos/Video3.mp4"
+              src="Videos/Equipe Gold.mp4"
               autoplay
               loop
               muted
@@ -219,12 +215,22 @@
 
           <figure class="media">
             <video
-              src="Videos/Video2.mp4"
+              id="goldVideo6"
+              src="Videos/Video6.mp4"
               autoplay
               loop
               muted
               playsinline
             ></video>
+            <button
+              class="mute-btn"
+              data-target="goldVideo6"
+              aria-pressed="true"
+              aria-label="Ativar som"
+              title="Ativar som"
+            >
+              🔇
+            </button>
           </figure>
         </div>
       </div>
@@ -237,9 +243,21 @@
           <h2 class="sec-title">Fale com a Gold</h2>
 
           <form id="form-contato">
-            <input id="nome" placeholder="Seu nome" required />
+            <label for="nome" class="sr-only">Seu nome</label>
+            <input
+              id="nome"
+              name="nome"
+              type="text"
+              autocomplete="name"
+              placeholder="Seu nome"
+              required
+            />
 
-            <select id="categoria" aria-label="Escolha de categoria">
+            <select
+              id="categoria"
+              name="categoria"
+              aria-label="Escolha de categoria"
+            >
               <option value="B">Primeira habilitação B (carro)</option>
               <option value="A">Primeira habilitação A (moto)</option>
               <option value="A + B">
@@ -268,7 +286,7 @@
             </label>
 
             <label for="curso">Curso profissionalizante (opcional)</label>
-            <select id="curso">
+            <select id="curso" name="curso">
               <option value="">— Selecionar curso (opcional) —</option>
               <option value="Direção Defensiva">Direção Defensiva</option>
               <option value="Transporte Coletivo de Passageiros">
@@ -348,7 +366,7 @@
             </select>
 
             <label class="no-course">
-              <input type="checkbox" id="semCurso" />
+              <input type="checkbox" id="semCurso" name="semCategoria" />
               Não tenho interesse em curso profissional agora
             </label>
 
@@ -394,7 +412,7 @@
       <div class="rating-summary" aria-label="Média de avaliações">
         <span class="stars" aria-hidden="true">★★★★★</span>
         <strong class="rating">4,9</strong>
-        <span class="count">(315 avaliações)</span>
+        <span class="count">(317 avaliações)</span>
       </div>
 
       <a
