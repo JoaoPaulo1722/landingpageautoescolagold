@@ -1,452 +1,683 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Auto Escola Gold • Comece sua CNH</title>
     <meta
       name="description"
-      content="Auto Escola Gold – Matrícula, aulas teóricas e práticas, aprovação rápida. Fale no WhatsApp e comece sua CNH hoje."
+      content="Gold Autoescola em Itu. Aulas teóricas e práticas, horários flexíveis e acompanhamento próximo até a aprovação."
     />
+    <meta name="theme-color" content="#151f38" />
+
+    <title>Gold Autoescola | Sua CNH começa com confiança</title>
+
+    <link rel="icon" href="img/Logo_Atual.jpeg" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="container hdr">
-        <div class="logo">
-          <img src="img/LogoNew.JPG" alt="Auto Escola Gold" />
-          <!-- <img src="img/gorro.png" class="logo-hat" alt="" aria-hidden="true" /> -->
-        </div>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-        <a
-          class="cta"
-          href="#contato"
-          aria-label="Ir para o formulário de WhatsApp"
-        >
-          Falar no WhatsApp
+    <header class="site-header" id="inicio">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="Gold Autoescola - início">
+          <img
+            src="img/Logo_Atual.jpeg"
+            alt="Gold Autoescola"
+            width="120"
+            height="120"
+          />
         </a>
+
+        <nav
+          class="main-nav"
+          id="main-navigation"
+          aria-label="Navegação principal"
+        >
+          <a href="#diferenciais">Diferenciais</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#historia">Nossa história</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="button button--header" href="#contato">
+            <span class="button-label-full">Falar no WhatsApp</span>
+            <span class="button-label-short">WhatsApp</span>
+          </a>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+            aria-label="Abrir menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
     </header>
 
-    <section class="hero hero--geral">
-      <div class="container wrap">
-        <div>
-          <span class="hero-ribbon"> Comece 2026 com sua CNH</span>
+    <main id="conteudo">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-glow hero-glow--one" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow--two" aria-hidden="true"></div>
 
-          <h1 class="headline">
-            <span class="line">Escolha a experiência que mais aprova -</span>
-            <span class="line">e dirija seu futuro, venha para Gold de</span>
-            <span class="line"><span class="hl">Itu SP</span></span>
-          </h1>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Autoescola em Itu • Desde 2015</span>
 
-          <p class="sub">
-            Em 2026, dê o primeiro passo para sua independência, com aulas
-            práticas e teóricas, agendamento flexível e acompanhamento até a
-            aprovação.
-          </p>
+            <h1 id="hero-title">
+              Sua CNH começa com
+              <span>confiança.</span>
+            </h1>
 
-          <div class="hero-card">
-            <div class="hero-badges">
-              <div class="badge">Aprovação rápida</div>
-              <div class="badge">Instrutores experientes</div>
-              <div class="badge">Atendimento via WhatsApp</div>
-              <div class="badge">Veículos Novos</div>
+            <p class="hero-text">
+              Aulas teóricas e práticas, horários flexíveis e acompanhamento
+              próximo para você dirigir seu futuro com mais segurança.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button--primary" href="#contato">
+                Começar pelo WhatsApp
+              </a>
+              <a class="button button--secondary" href="#historia">
+                Conhecer a Gold
+              </a>
             </div>
 
-            <a class="cta" href="#contato">Quero minha CNH</a>
+            <div class="hero-rating" aria-label="Avaliação 4,9 de 5 no Google">
+              <span class="hero-stars" aria-hidden="true">★★★★★</span>
+              <div>
+                <strong>4,9 no Google</strong>
+                <span>387 avaliações</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image-card" id="hero-image-card">
+              <img
+                id="hero-image"
+                src="img/banner_autoescolagold.jpeg"
+                alt="Veículo e estrutura da Gold Autoescola"
+                loading="eager"
+                fetchpriority="high"
+              />
+
+              <div class="hero-image-fallback" aria-hidden="true">
+                <span class="fallback-road fallback-road--one"></span>
+                <span class="fallback-road fallback-road--two"></span>
+                <img src="img/Logo_Atual.jpeg" alt="Gold Autoescola" />
+              </div>
+            </div>
+
+            <div class="hero-floating-cards">
+              <div class="floating-card floating-card--top">
+                <span class="floating-icon" aria-hidden="true">✓</span>
+                <div>
+                  <strong>Acompanhamento próximo</strong>
+                  <span>Do início até os exames</span>
+                </div>
+              </div>
+
+              <div class="floating-card floating-card--bottom">
+                <span class="floating-number">2015</span>
+                <span>Uma história construída em Itu</span>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="hero-media">
-          <div class="frame">
+      <section class="trust-strip" aria-label="Números da Gold Autoescola">
+        <div class="container trust-grid">
+          <article class="trust-item">
+            <strong>4,9</strong>
+            <span>Avaliação no Google</span>
+          </article>
+          <article class="trust-item">
+            <strong>387+</strong>
+            <span>Avaliações de alunos</span>
+          </article>
+          <article class="trust-item">
+            <strong>6</strong>
+            <span>Carros na frota</span>
+          </article>
+          <article class="trust-item">
+            <strong>4</strong>
+            <span>Motos disponíveis</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--light" id="diferenciais">
+        <div class="container">
+          <div class="section-heading section-heading--features">
+            <span class="section-kicker">Por que escolher a Gold?</span>
+            <h2>Uma experiência mais tranquila para conquistar sua CNH</h2>
+            <p>
+              Informação clara, atendimento próximo e uma estrutura preparada
+              para acompanhar cada etapa do seu processo.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card feature-card--featured">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M5 12.5 9.2 17 19 7" />
+                </svg>
+              </div>
+              <span class="feature-label">Acompanhamento</span>
+              <h3>Suporte do início ao fim</h3>
+              <p>
+                Orientação próxima desde a matrícula até a preparação para os
+                exames, com uma equipe disponível para ajudar.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <circle cx="12" cy="12" r="8" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+              </div>
+              <span class="feature-label">Flexibilidade</span>
+              <h3>Aulas que cabem na sua rotina</h3>
+              <p>
+                Agendamentos organizados para tornar o processo mais prático e
+                compatível com seus horários.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M4 5h16v11H8l-4 3V5Z" />
+                  <path d="M8 9h8M8 12h5" />
+                </svg>
+              </div>
+              <span class="feature-label">Atendimento</span>
+              <h3>Comunicação humana e transparente</h3>
+              <p>
+                Tire dúvidas rapidamente pelo WhatsApp e receba informações
+                claras sobre etapas, prazos e próximos passos.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section automatic-section" id="carro-automatico">
+        <div class="container automatic-grid">
+          <figure class="automatic-media">
             <img
-              src="img/BannerGold2026.jpeg"
-              alt="Auto Escola Gold – aulas práticas"
+              src="img/banner_autoescolagold.jpeg"
+              alt="Divulgação das aulas em carro automático da Gold Autoescola"
+              width="1024"
+              height="1536"
+              loading="lazy"
             />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Diferenciais -->
-    <section class="soft">
-      <div class="container">
-        <h2 class="sec-title">Por que a Gold?</h2>
-        <div class="grid-3">
-          <div class="card">
-            <strong>Aprovação de verdade</strong>
-            <p class="muted">
-              Processo guiado do início ao fim, sem dor de cabeça.
-            </p>
-          </div>
-          <div class="card">
-            <strong>Flexibilidade</strong>
-            <p class="muted">Horários que encaixam na sua rotina.</p>
-          </div>
-          <div class="card">
-            <strong>Transparência</strong>
-            <p class="muted">Planos claros e atendimento humano.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Nossa História -->
-    <section id="historia" class="about-section">
-      <div class="container about">
-        <div class="about-col">
-          <h2>Nossa História</h2>
-
-          <p>
-            A Autoescola Gold nasceu de um sonho que se tornou realidade.
-            Oficialmente conquistada pelos proprietários
-            <strong>Douglas</strong> e <strong>Edna</strong>, nossa história é
-            marcada por dedicação, esforço e paixão pelo que fazemos.
-          </p>
-
-          <p>
-            Douglas, mestre de obras, e Edna, que iniciou sua trajetória como
-            instrutora em 2008, uniram forças e, após muito trabalho, realizaram
-            o grande sonho de terem o próprio negócio. Desde 2015, Edna atua
-            como <strong>proprietária</strong>,
-            <strong>diretora-geral</strong> e
-            <strong>instrutora prática e teórica</strong>, sempre com o
-            compromisso de oferecer ensino de qualidade e um atendimento humano.
-          </p>
-
-          <p>
-            O que começou como um sonho hoje é referência na cidade. A
-            Autoescola Gold é reconhecida pelo excelente atendimento e
-            estrutura: frota própria e sala teórica modernizada. Confira alguns
-            números:
-          </p>
-
-          <ul class="about-stats">
-            <li><strong>6</strong> carros</li>
-            <li><strong>4</strong> motos</li>
-            <li><strong>1</strong> micro-ônibus</li>
-            <li><strong>Sala teórica</strong> modernizada</li>
-          </ul>
-
-          <p>
-            Na Gold, cada aluno é tratado com respeito e dedicação, porque
-            acreditamos que dirigir não é apenas uma habilidade, mas a
-            realização de um sonho de liberdade e independência.
-          </p>
-
-          <div class="about-cta">
-            <a href="#contato" class="cta">Falar com a Gold</a>
-          </div>
-        </div>
-
-        <div class="about-media">
-          <img src="img/LogoNew.JPG" alt="Autoescola Gold" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Como funciona -->
-    <section>
-      <div class="container">
-        <h2 class="sec-title">Como funciona</h2>
-        <div class="how">
-          <div class="step">
-            <span class="num">1</span>
-            <h3>Matrícula</h3>
-            <p class="muted">
-              Envie seus dados no WhatsApp e já iniciamos sua inscrição.
-            </p>
-          </div>
-          <div class="step">
-            <span class="num">2</span>
-            <h3>Aulas</h3>
-            <p class="muted">
-              Teoria + prática com acompanhamento próximo dos instrutores.
-            </p>
-          </div>
-          <div class="step">
-            <span class="num">3</span>
-            <h3>Exames</h3>
-            <p class="muted">
-              Preparo focado na prova. Vamos com você até a aprovação.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Galeria / vídeos -->
-    <section class="soft">
-      <div class="container">
-        <h2 class="sec-title">Veja a Gold em ação</h2>
-
-        <div class="gallery-grid">
-          <figure class="media">
-            <video
-              id="goldVideo9"
-              src="Videos/Video9.mp4"
-              autoplay
-              loop
-              muted
-              playsinline
-            ></video>
-            <button
-              class="mute-btn"
-              data-target="goldVideo9"
-              aria-pressed="true"
-              aria-label="Ativar som"
-              title="Ativar som"
-            >
-              🔇
-            </button>
           </figure>
 
-          <figure class="media">
-            <video
-              id="goldVideo4"
-              src="Videos/Video8.mp4"
-              autoplay
-              loop
-              muted
-              playsinline
-            ></video>
-            <button
-              class="mute-btn"
-              data-target="goldVideo4"
-              aria-pressed="true"
-              aria-label="Ativar som"
-              title="Ativar som"
-            >
-              🔇
-            </button>
-          </figure>
+          <div class="automatic-content">
+            <span class="section-kicker">Carro automático</span>
 
-          <figure class="media">
-            <video
-              id="goldVideo6"
-              src="Videos/Video6.mp4"
-              autoplay
-              loop
-              muted
-              playsinline
-            ></video>
-            <button
-              class="mute-btn"
-              data-target="goldVideo6"
-              aria-pressed="true"
-              aria-label="Ativar som"
-              title="Ativar som"
-            >
-              🔇
-            </button>
-          </figure>
+            <h2>
+              Mais conforto para você focar no que realmente importa: aprender
+            </h2>
+
+            <p>
+              Conte com um veículo automático para realizar suas aulas com mais
+              tranquilidade, segurança e conforto durante o processo de
+              aprendizagem.
+            </p>
+
+            <div class="automatic-benefits">
+              <span>Mais segurança e conforto</span>
+              <span>Instrutores qualificados</span>
+              <span>Frota moderna</span>
+              <span>Atendimento humanizado</span>
+            </div>
+
+            <a class="button button--primary" href="#contato">
+              Consultar valores e condições
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contato -->
-    <section id="contato" class="soft">
-      <div class="container contact">
-        <div>
-          <h2 class="sec-title">Fale com a Gold</h2>
+      <section class="section" id="como-funciona">
+        <div class="container">
+          <div class="section-heading section-heading--center">
+            <div>
+              <span class="section-kicker">Como funciona</span>
+              <h2>Três passos para começar sua jornada</h2>
+            </div>
+            <p>
+              Um processo simples, com orientação em cada etapa para você saber
+              exatamente o que fazer.
+            </p>
+          </div>
 
-          <form id="form-contato">
-            <label for="nome" class="sr-only">Seu nome</label>
-            <input
-              id="nome"
-              name="nome"
-              type="text"
-              autocomplete="name"
-              placeholder="Seu nome"
-              required
-            />
+          <div class="steps-grid">
+            <article class="step-card">
+              <span class="step-number">01</span>
+              <h3>Fale com a Gold</h3>
+              <p>
+                Envie seus dados pelo WhatsApp e receba as informações para
+                iniciar sua matrícula.
+              </p>
+            </article>
 
-            <select
-              id="categoria"
-              name="categoria"
-              aria-label="Escolha de categoria"
-            >
-              <option value="B">Primeira habilitação B (carro)</option>
-              <option value="A">Primeira habilitação A (moto)</option>
-              <option value="A + B">
-                Primeira habilitação A/B (carro e moto)
-              </option>
-              <option value="Adição de categoria B (carro)">
-                Adição de categoria B (carro)
-              </option>
-              <option value="Adição de categoria A (moto)">
-                Adição de categoria A (moto)
-              </option>
-              <option value="Adição de categoria D">
-                Adição de categoria D
-              </option>
-              <option value="Reabilitação categorias A/B">
-                Reabilitação categorias A/B
-              </option>
-              <option value="Reabilitação de categoria D">
-                Reabilitação de categoria D
-              </option>
-            </select>
+            <article class="step-card">
+              <span class="step-number">02</span>
+              <h3>Faça suas aulas</h3>
+              <p>
+                Aprenda teoria e prática com acompanhamento próximo dos
+                instrutores.
+              </p>
+            </article>
 
-            <label class="line-option">
-              <input type="checkbox" id="semCategoria" />
-              Já possuo CNH — não preciso selecionar categoria
-            </label>
-
-            <label for="curso">Curso profissionalizante (opcional)</label>
-            <select id="curso" name="curso">
-              <option value="">— Selecionar curso (opcional) —</option>
-              <option value="Direção Defensiva">Direção Defensiva</option>
-              <option value="Transporte Coletivo de Passageiros">
-                Curso Para Condutores de Veículo de Transporte Coletivo de
-                Passageiros
-              </option>
-              <option value="Transporte Escolar">
-                Curso Para Condutores de Veículo de Transporte Escolar
-              </option>
-              <option value="Produtos Perigosos (MOPP)">
-                Curso Para Condutores de Veículos de Transporte de Produtos
-                Perigosos
-              </option>
-              <option value="Veículo de Emergência">
-                Curso Para Condutores de Veículos de Emergência
-              </option>
-              <option value="Carga Indivisível">
-                Curso Para Condutores de Veículos de Transporte de Carga
-                Indivisível
-              </option>
-              <option value="Atualização Transporte Coletivo">
-                Atualização para Condutores de Transporte Coletivo
-              </option>
-              <option value="Atualização Transporte Escolar">
-                Atualização para Condutores de Veículos de Transporte Escolar
-              </option>
-              <option value="Atualização Produtos Perigosos">
-                Atualização para Condutores de Veículos de Produtos Perigosos
-              </option>
-              <option value="Atualização Veículo de Emergência">
-                Atualização para Condutores de Veículos de Emergência
-              </option>
-              <option value="Atualização Carga Indivisível">
-                Atualização para Condutores de Veículos de Carga Indivisível
-              </option>
-              <option value="Frota Leve">
-                Frota Leve: Comportamento e Condução Preventiva
-              </option>
-              <option value="Frota Pesada">
-                Frota Pesada: Direção Econômica e Tecnologia
-              </option>
-              <option value="Moto Carga Ponto a Ponto">
-                Moto: Transporte de Carga ponto a ponto
-              </option>
-              <option value="Bikers Delivery">
-                Bikers: Bike Courier e Delivery
-              </option>
-              <option value="Primeiros Socorros">Primeiros Socorros</option>
-              <option value="Normas de Circulação">
-                Normas de Circulação e Conduta
-              </option>
-              <option value="Empreendedorismo">Empreendedorismo</option>
-              <option value="Prova Primeira Habilitação">
-                Prova Primeira Habilitação
-              </option>
-              <option value="Prova Reciclagem">Prova de Reciclagem</option>
-              <option value="Prova Renovação">Prova de Renovação</option>
-              <option value="Prova Preventivo Reciclagem">
-                Prova de Preventivo de Reciclagem
-              </option>
-              <option value="Processo Reciclagem Infratores">
-                Processo Reciclagem para Condutores Infratores (Curso e Prova)
-              </option>
-              <option value="Processo Renovação CNH">
-                Processo Renovação da Atualização da CNH (Curso e Prova)
-              </option>
-              <option value="Processo Preventivo Reciclagem">
-                Processo de Preventivo de Reciclagem (Curso e Prova)
-              </option>
-              <option value="Prova Reabilitação">Prova de Reabilitação</option>
-              <option value="NR 35 Trabalho em Altura">
-                Norma Regulamentadora 35 – Trabalho em Altura
-              </option>
-              <option value="Curso de Capacitação para Monitores">
-                Curso de Capacitação para Monitores de Transporte Escolar
-              </option>
-            </select>
-
-            <label class="no-course">
-              <input type="checkbox" id="semCurso" name="semCategoria" />
-              Não tenho interesse em curso profissional agora
-            </label>
-
-            <textarea
-              id="msg"
-              rows="3"
-              placeholder="Mensagem (opcional)"
-            ></textarea>
-
-            <button class="primary" type="submit">Enviar no WhatsApp</button>
-          </form>
+            <article class="step-card">
+              <span class="step-number">03</span>
+              <h3>Prepare-se para os exames</h3>
+              <p>
+                Conte com orientação e preparação focada para realizar suas
+                avaliações com mais confiança.
+              </p>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <div>
-          <iframe
-            class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1540.971041494914!2d-47.29107536527707!3d-23.27699862087411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf45f1e10961fd%3A0xe05c8f31139cedf1!2sAuto%20Escola%20Gold%20Itu!5e0!3m2!1spt-BR!2sus!4v1754608535492!5m2!1spt-BR!2sus"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Mapa da Auto Escola Gold em Itu"
-          ></iframe>
+      <section class="section section--brand" id="historia">
+        <div class="container story-grid">
+          <div class="story-visual">
+            <div class="story-logo-card">
+              <img
+                src="img/Logo_Atual.jpeg"
+                alt="Nova identidade visual da Gold Autoescola"
+                loading="lazy"
+              />
+            </div>
+            <div class="story-accent" aria-hidden="true"></div>
+          </div>
 
-          <p class="muted info">
-            Endereço:
-            <strong>
-              R. Maestro Tristão Mariano da Costa, 119 - Vila Nova, Itu - SP
-            </strong>
-            <br />
-            Horário: <strong>[Seg a Sex, 8h–18h] - [Sab - 9h-13h]</strong>
+          <div class="story-copy">
+            <span class="section-kicker section-kicker--dark"
+              >Nossa história</span
+            >
+            <h2>Um sonho construído com dedicação e paixão por ensinar</h2>
+
+            <p>
+              A Gold Autoescola nasceu da trajetória de Douglas e Edna, que
+              transformaram trabalho, experiência e dedicação em um negócio
+              reconhecido na cidade de Itu.
+            </p>
+
+            <p>
+              Desde 2015, Edna atua como proprietária, diretora-geral e
+              instrutora prática e teórica, mantendo o compromisso com um ensino
+              de qualidade e um atendimento verdadeiramente humano.
+            </p>
+
+            <div class="story-stats">
+              <div>
+                <strong>6 carros</strong>
+                <span>Frota própria</span>
+              </div>
+              <div>
+                <strong>4 motos</strong>
+                <span>Aulas práticas</span>
+              </div>
+              <div>
+                <strong>1 micro-ônibus</strong>
+                <span>Estrutura completa</span>
+              </div>
+              <div>
+                <strong>Sala modernizada</strong>
+                <span>Ensino teórico</span>
+              </div>
+            </div>
+
+            <a class="button button--dark" href="#contato">Falar com a Gold</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--light">
+        <div class="container">
+          <div class="section-heading section-heading--center">
+            <div>
+              <span class="section-kicker">Gold em ação</span>
+              <h2>Conheça um pouco da nossa rotina</h2>
+            </div>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="media-card">
+              <video
+                id="goldVideo9"
+                src="Videos/Video9.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+              ></video>
+              <button
+                class="mute-btn"
+                type="button"
+                data-target="goldVideo9"
+                aria-pressed="true"
+                aria-label="Ativar som"
+                title="Ativar som"
+              >
+                🔇
+              </button>
+            </figure>
+
+            <figure class="media-card">
+              <video
+                id="goldVideo4"
+                src="Videos/Video8.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+              ></video>
+              <button
+                class="mute-btn"
+                type="button"
+                data-target="goldVideo4"
+                aria-pressed="true"
+                aria-label="Ativar som"
+                title="Ativar som"
+              >
+                🔇
+              </button>
+            </figure>
+
+            <figure class="media-card">
+              <video
+                id="goldVideo6"
+                src="Videos/Video6.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+              ></video>
+              <button
+                class="mute-btn"
+                type="button"
+                data-target="goldVideo6"
+                aria-pressed="true"
+                aria-label="Ativar som"
+                title="Ativar som"
+              >
+                🔇
+              </button>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contato">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <span class="section-kicker">Fale com a Gold</span>
+            <h2>Pronto para dar o primeiro passo?</h2>
+            <p>
+              Preencha os campos abaixo e abra uma conversa no WhatsApp com uma
+              mensagem pronta.
+            </p>
+
+            <form class="contact-form" id="form-contato">
+              <div class="field">
+                <label for="nome">Seu nome</label>
+                <input
+                  id="nome"
+                  name="nome"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Como podemos chamar você?"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="categoria">Categoria de interesse</label>
+                <select id="categoria" name="categoria">
+                  <option value="B">Primeira habilitação B (carro)</option>
+                  <option value="A">Primeira habilitação A (moto)</option>
+                  <option value="A + B">Primeira habilitação A/B</option>
+                  <option value="Adição de categoria B (carro)">
+                    Adição de categoria B (carro)
+                  </option>
+                  <option value="Adição de categoria A (moto)">
+                    Adição de categoria A (moto)
+                  </option>
+                  <option value="Adição de categoria D">
+                    Adição de categoria D
+                  </option>
+                  <option value="Reabilitação categorias A/B">
+                    Reabilitação categorias A/B
+                  </option>
+                  <option value="Reabilitação de categoria D">
+                    Reabilitação de categoria D
+                  </option>
+                </select>
+              </div>
+
+              <label class="check-line">
+                <input type="checkbox" id="semCategoria" />
+                <span>Já possuo CNH e não preciso selecionar categoria</span>
+              </label>
+
+              <div class="field">
+                <label for="curso">Curso profissionalizante (opcional)</label>
+                <select id="curso" name="curso">
+                  <option value="">Selecionar curso</option>
+                  <option value="Direção Defensiva">Direção Defensiva</option>
+                  <option value="Transporte Coletivo de Passageiros">
+                    Transporte Coletivo de Passageiros
+                  </option>
+                  <option value="Transporte Escolar">Transporte Escolar</option>
+                  <option value="Produtos Perigosos (MOPP)">
+                    Produtos Perigosos (MOPP)
+                  </option>
+                  <option value="Veículo de Emergência">
+                    Veículo de Emergência
+                  </option>
+                  <option value="Carga Indivisível">Carga Indivisível</option>
+                  <option value="Atualização Transporte Coletivo">
+                    Atualização Transporte Coletivo
+                  </option>
+                  <option value="Atualização Transporte Escolar">
+                    Atualização Transporte Escolar
+                  </option>
+                  <option value="Atualização Produtos Perigosos">
+                    Atualização Produtos Perigosos
+                  </option>
+                  <option value="Atualização Veículo de Emergência">
+                    Atualização Veículo de Emergência
+                  </option>
+                  <option value="Atualização Carga Indivisível">
+                    Atualização Carga Indivisível
+                  </option>
+                  <option value="Frota Leve">
+                    Frota Leve: Comportamento e Condução Preventiva
+                  </option>
+                  <option value="Frota Pesada">
+                    Frota Pesada: Direção Econômica e Tecnologia
+                  </option>
+                  <option value="Moto Carga Ponto a Ponto">
+                    Moto: Transporte de Carga ponto a ponto
+                  </option>
+                  <option value="Bikers Delivery">
+                    Bikers: Bike Courier e Delivery
+                  </option>
+                  <option value="Primeiros Socorros">Primeiros Socorros</option>
+                  <option value="Normas de Circulação">
+                    Normas de Circulação e Conduta
+                  </option>
+                  <option value="Empreendedorismo">Empreendedorismo</option>
+                  <option value="Prova Primeira Habilitação">
+                    Prova Primeira Habilitação
+                  </option>
+                  <option value="Prova Reciclagem">Prova de Reciclagem</option>
+                  <option value="Prova Renovação">Prova de Renovação</option>
+                  <option value="Prova Preventivo Reciclagem">
+                    Prova de Preventivo de Reciclagem
+                  </option>
+                  <option value="Processo Reciclagem Infratores">
+                    Processo Reciclagem para Condutores Infratores
+                  </option>
+                  <option value="Processo Renovação CNH">
+                    Processo Renovação da Atualização da CNH
+                  </option>
+                  <option value="Processo Preventivo Reciclagem">
+                    Processo de Preventivo de Reciclagem
+                  </option>
+                  <option value="Prova Reabilitação">
+                    Prova de Reabilitação
+                  </option>
+                  <option value="NR 35 Trabalho em Altura">
+                    NR 35 – Trabalho em Altura
+                  </option>
+                  <option value="Curso de Capacitação para Monitores">
+                    Capacitação para Monitores de Transporte Escolar
+                  </option>
+                </select>
+              </div>
+
+              <label class="check-line">
+                <input type="checkbox" id="semCurso" name="semCurso" />
+                <span>Não tenho interesse em curso profissional agora</span>
+              </label>
+
+              <div class="field">
+                <label for="msg">Mensagem adicional (opcional)</label>
+                <textarea
+                  id="msg"
+                  name="mensagem"
+                  rows="4"
+                  placeholder="Escreva uma dúvida ou informação adicional"
+                ></textarea>
+              </div>
+
+              <p
+                class="form-feedback"
+                id="form-feedback"
+                aria-live="polite"
+              ></p>
+
+              <button class="button button--primary button--full" type="submit">
+                Enviar no WhatsApp
+              </button>
+            </form>
+          </div>
+
+          <aside class="location-card">
+            <div class="location-map-wrap">
+              <iframe
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1540.971041494914!2d-47.29107536527707!3d-23.27699862087411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf45f1e10961fd%3A0xe05c8f31139cedf1!2sAuto%20Escola%20Gold%20Itu!5e0!3m2!1spt-BR!2sus!4v1754608535492!5m2!1spt-BR!2sus"
+                title="Mapa da Gold Autoescola em Itu"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div class="location-content">
+              <span class="location-label">Visite a Gold</span>
+              <h3>Estamos em Itu</h3>
+              <p>
+                R. Maestro Tristão Mariano da Costa, 119<br />
+                Vila Nova, Itu - SP
+              </p>
+              <p>
+                <strong>Segunda a sexta:</strong> 8h às 18h<br />
+                <strong>Sábado:</strong> 9h às 13h
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="reviews-section">
+        <div class="container reviews-inner">
+          <div>
+            <span class="section-kicker section-kicker--dark"
+              >Opinião dos alunos</span
+            >
+            <h2>Quem aprende com a Gold recomenda</h2>
+          </div>
+
+          <div class="reviews-summary" aria-label="Média de avaliações">
+            <span class="reviews-stars" aria-hidden="true">★★★★★</span>
+            <strong>4,9</strong>
+            <span>387 avaliações no Google</span>
+          </div>
+
+          <a
+            class="button button--dark"
+            href="https://www.google.com/maps/place/Auto+Escola+Gold+Itu/@-23.2782666,-47.2935975,17z/data=!4m8!3m7!1s0x94cf45f1e10961fd:0xe05c8f31139cedf1!8m2!3d-23.2782666!4d-47.2910226!9m1!1b1!16s%2Fg%2F11t7_m5zvx?entry=ttu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver avaliações no Google
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="img/Logo_Atual.jpeg" alt="Gold Autoescola" loading="lazy" />
+          <p>
+            Atendimento próximo, estrutura completa e confiança para você
+            conquistar sua CNH.
           </p>
         </div>
+
+        <div class="footer-links">
+          <strong>Navegação</strong>
+          <a href="#diferenciais">Diferenciais</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#historia">Nossa história</a>
+          <a href="#contato">Contato</a>
+        </div>
+
+        <div class="footer-contact">
+          <strong>Gold Autoescola</strong>
+          <span>Itu - São Paulo</span>
+          <a class="button button--primary" href="#contato">WhatsApp</a>
+        </div>
       </div>
-    </section>
 
-    <!-- Reviews compactas com link para o Google -->
-    <section class="reviews-section">
-      <h2>O que nossos alunos dizem</h2>
-
-      <div class="rating-summary" aria-label="Média de avaliações">
-        <span class="stars" aria-hidden="true">★★★★★</span>
-        <strong class="rating">4,9</strong>
-        <span class="count">(382 avaliações)</span>
-      </div>
-
-      <a
-        class="cta reviews-btn"
-        href="https://www.google.com/maps/place/Auto+Escola+Gold+Itu/@-23.2782666,-47.2935975,17z/data=!4m8!3m7!1s0x94cf45f1e10961fd:0xe05c8f31139cedf1!8m2!3d-23.2782666!4d-47.2910226!9m1!1b1!16s%2Fg%2F11t7_m5zvx?entry=ttu"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Ver todas as avaliações no Google"
-      >
-        Ver avaliações no Google
-      </a>
-    </section>
-
-    <footer class="footer">
-      <div class="container foot">
+      <div class="container footer-bottom">
         <small>
-          © <span id="year"></span> Auto Escola Gold. Todos os direitos
-          reservados. | Site desenvolvido por
-          <a href="https://www.linkedin.com/in/joão-paulo-peres-167999218">
+          © <span id="year"></span> Gold Autoescola. Todos os direitos
+          reservados.
+        </small>
+        <small>
+          Site desenvolvido por
+          <a
+            href="https://www.linkedin.com/in/joão-paulo-peres-167999218"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             João Paulo Peres
           </a>
         </small>
-
-        <a class="cta" href="#contato">WhatsApp</a>
       </div>
     </footer>
 
